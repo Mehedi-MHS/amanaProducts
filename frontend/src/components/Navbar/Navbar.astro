@@ -1,0 +1,138 @@
+---
+---
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search product..">
+            <button class="btn btn-primary">Search</button>
+        </div>
+        <div class="contact">
+            <span><span class="fa fa-phone"></span> 01862830430</span>
+        </div>
+        <div class="login">
+            <button class="btn btn-dark">
+                <span class="fa fa-user"></span>
+                <a href="#" class="text-decoration-none text-white">Login / Sign In</a>
+            </button>
+
+            </button>
+        </div>
+        <div class="cart ">
+            <button class="btn btn-light position-relative">
+                <span class="fa fa-cart-shopping"></span>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    99+
+                    <span class="visually-hidden">Shopping Cart</span>
+                  </span>
+            </button>
+            
+        </div>
+        <div class="menu-toggle">
+            <span>☰</span>
+        </div>
+    </div>
+    <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Honey</a>
+        <a href="#">Dairy</a>
+        <a href="#">Oil</a>
+        <a href="#">Spices</a>
+        <a href="#">Super Foods</a>
+        <a href="#">Nuts & Dates</a>
+        <a href="#">Seasonal Fruits</a>
+        <a href="#">Qurbani</a>
+        <a href="#">Karkuma</a>
+        <a href="#">Baby Care</a>
+    </nav>
+</header>
+
+<style>
+header{
+
+    max-width: 100%;
+}
+.navbar {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search-bar {
+    display: flex;
+    /*flex: 1;*/
+    width: 20%;
+    margin: 0 10px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    padding: 8px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+.contact, .login, .cart {
+ margin:0px 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav-links a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .search-bar, .contact, .login, .cart {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+    
+    .nav-links a {
+        padding: 15px;
+        border-top: 1px solid #444;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+}
+</style>
